@@ -12,7 +12,7 @@ attr_reader :species
   end
 
   def say_species
-    puts "I am #{species}"
+    puts "I am #{@species}"
   end
   def buy_fish(name)
     new_fish = Fish.new
