@@ -41,7 +41,11 @@ attr_reader :species
     pets[:fishes].each do |fish|
       fish.mood = "happy"
     end
+  end
 
+  def list_pets
+    puts "I have #{[:fishes].length}"
+    
   end
 
   def self.reset_all
