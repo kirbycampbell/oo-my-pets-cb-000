@@ -44,9 +44,11 @@ attr_reader :species
   end
 
   def sell_pets
-    pets[:fishes].clear
-    pets[:cats].clear
-    pets[:dogs].clear
+    pets.each do |species, animals|
+      animals.each do |animal|
+        animal.mood = "nervous"
+      end.clear
+    end
   end
 
   def list_pets
