@@ -1,5 +1,5 @@
 class Owner
-attr_accessor :name, :pets, :dog, :cat, :fish
+attr_accessor :name, :pets, :dog, :cat, :fish, :an_name, :mood
 attr_reader :species
 @@all = []
 @@owner_count = 0
@@ -15,8 +15,8 @@ attr_reader :species
     "I am a #{@species}."
   end
 
-  def buy_fish(name)
-    new_fish = Fish.new(name, mood)
+  def buy_fish
+    new_fish = Fish.new(@an_name, @mood)
   end
 
   def buy_cat(name)
