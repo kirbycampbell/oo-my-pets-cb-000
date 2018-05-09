@@ -25,6 +25,12 @@ attr_reader :species
     pets[:dogs] << Dog.new(name)
   end
 
+  def walk_dogs
+    pets[:dogs].each do |dog|
+      Dog.mood = "happy"
+    
+  end
+
   def self.reset_all
     @@owner_count.clear
   end
