@@ -11,7 +11,7 @@ attr_reader :species
     @@owner_count += 1
   end
 
-  def self.say_species
+  def say_species
     puts "I am #{species}"
   end
   def buy_fish(name)
