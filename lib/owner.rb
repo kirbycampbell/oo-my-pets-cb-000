@@ -33,7 +33,7 @@ attr_reader :species
   end
 
   def self.all
-    @@all
+    @@owner_count
   end
 
 
