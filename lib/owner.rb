@@ -1,11 +1,9 @@
 class Owner
 attr_accessor :name, :pets, :dog, :cat, :fish
-counter = 0
 
   def initialize(name)
     @name = name
     @pets = {fishes: [], cats: [], dogs: []}
-    counter += 1
   end
 
   def buy_fish(name)
