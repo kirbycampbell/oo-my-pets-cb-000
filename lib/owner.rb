@@ -28,7 +28,7 @@ attr_reader :species
   def walk_dogs
     pets[:dogs].each do |dog|
       Dog.mood = "happy"
-    
+
   end
 
   def self.reset_all
