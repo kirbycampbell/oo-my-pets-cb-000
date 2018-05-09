@@ -15,8 +15,8 @@ attr_reader :species
     "I am a #{@species}."
   end
 
-  def buy_fish(@an_name)
-    new_fish = Fish.new(@an_name, @mood)
+  def buy_fish=(name)
+    self.pets[1] = Fish.new(name)
   end
 
   def buy_cat(name)
