@@ -43,9 +43,14 @@ attr_reader :species
     end
   end
 
+  def sell_pets
+    pets[:fishes].clear
+    pets[:cats].clear
+    pets[:dogs].clear
+  end
+
   def list_pets
     "I have #{pets[:fishes].count} fish, #{pets[:dogs].count} dog(s), and #{pets[:cats].count} cat(s)."
-
   end
 
   def self.reset_all
