@@ -4,6 +4,7 @@ attr_accessor :name, :pets, :dog, :cat, :fish
   def initialize(name)
     @name = name
     @pets = {fishes: [], cats: [], dogs: []}
+    @@all << self
   end
 
   def buy_fish(name)
@@ -18,10 +19,6 @@ attr_accessor :name, :pets, :dog, :cat, :fish
 
   end
 
-
-  def save
-    @@all << self
-  end
 
   def self.all
     @@all
