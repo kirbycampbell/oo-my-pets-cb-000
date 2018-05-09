@@ -44,8 +44,8 @@ attr_reader :species
   end
 
   def list_pets
-    puts "I have #{[:fishes].length}"
-    
+    "I have #{[:fishes].length}"
+
   end
 
   def self.reset_all
