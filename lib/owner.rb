@@ -16,7 +16,7 @@ attr_reader :species
   end
 
   def buy_fish(name)
-    new_fish = Fish.new
+    Fish.new(name)
   end
 
   def buy_cat(name)
