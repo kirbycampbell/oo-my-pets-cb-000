@@ -1,6 +1,6 @@
 class Owner
 attr_accessor :name, :pets, :dog, :cat, :fish
-@@owners = []
+@@all = []
   def initialize(name)
     @name = name
     @pets = {fishes: [], cats: [], dogs: []}
@@ -19,12 +19,12 @@ attr_accessor :name, :pets, :dog, :cat, :fish
   end
 
 
-  def owner_list
-    @@owners << self
+  def save
+    @@all << self
   end
 
   def self.all
-    @@owners
+    @@all
   end
 
 end
