@@ -31,6 +31,12 @@ attr_reader :species
     end
   end
 
+  def play_with_cats
+    pets[:cats].each do |cat|
+      cat.mood = "happy"
+    end
+  end
+
   def self.reset_all
     @@owner_count.clear
   end
