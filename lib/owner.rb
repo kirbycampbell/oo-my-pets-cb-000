@@ -7,6 +7,7 @@ attr_reader :species
     @name = name
     @pets = {fishes: [], cats: [], dogs: []}
     @species = species
+    @an_name = animal_name
     @@all << self
     @@owner_count += 1
   end
@@ -15,8 +16,8 @@ attr_reader :species
     "I am a #{@species}."
   end
 
-  def buy_fish(name)
-    self.pets[1] << Fish.new(name)
+  def buy_fish(animal_name)
+    self.pets[1] << Fish.new(animal_name)
   end
 
   def buy_cat(name)
