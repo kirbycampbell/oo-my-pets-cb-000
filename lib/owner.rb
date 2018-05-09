@@ -44,7 +44,7 @@ attr_reader :species
   end
 
   def list_pets
-    "I have #{[:fishes].length}"
+    "I have #{[:fishes].count}"
 
   end
 
