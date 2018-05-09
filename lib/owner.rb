@@ -22,11 +22,11 @@ attr_accessor :name, :pets, :dog, :cat, :fish
   end
 
   def self.reset_all
-    self.count
+    self.count = 0
   end
 
   def self.count
-    @@owner_count = 0
+    @@owner_count
   end
 
   def self.all
