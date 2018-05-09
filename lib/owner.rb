@@ -5,12 +5,6 @@ attr_accessor :name, :pets, :dog, :cat, :fish
     @name = name
     @pets = {fishes: [], cats: [], dogs: []}
   end
-  def owner_list
-    @@owners << self
-  end
-  def self.all
-    @@owners
-  end
 
   def buy_fish(name)
     new_fish = Fish.new
@@ -22,6 +16,15 @@ attr_accessor :name, :pets, :dog, :cat, :fish
 
   def buy_dog(name)
 
+  end
+
+
+  def owner_list
+    @@owners << self
+  end
+
+  def self.all
+    @@owners
   end
 
 end
