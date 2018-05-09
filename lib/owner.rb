@@ -1,6 +1,6 @@
 class Owner
-attr_accessor :name, :pets, :dog, :cat, :fish
-attr_reader :species
+attr_accessor :name, :pets, :dog, :cat, :fish, :species
+attr_reader 
 @@all = []
 @@owner_count = 0
   def initialize(name, species = "human")
@@ -14,6 +14,7 @@ attr_reader :species
   def say_species
     puts "I am #{@species}"
   end
+  
   def buy_fish(name)
     new_fish = Fish.new
   end
